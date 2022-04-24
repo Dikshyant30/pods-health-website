@@ -1,0 +1,57 @@
+<div class="mob-height">
+  <div class="align-title">
+    <div class="caption">
+      <h3>{{title}}</h3>
+    </div>
+  </div>
+  <img
+    [src]="_imgPath.getFilePath(bannerImg)"
+    class="d-block w-100 bg-img"
+    alt="..."
+  />
+</div>
+
+<div class="para" fxLayout="column" fxLayoutGap="32px">
+  <h3>Welcome to PODS Health Consultation Services</h3>
+<div class="consult-text">
+    <p>
+        Pods Health provides comprehensive medical supply chain solutions and
+        advisory for Healthcare organizations. Pods offers a
+        complementary assessment of your organization’s existing medical supplies
+        and PPE. Pods can likely deliver a medical supply
+        solution that results in at least a 5% savings off your current cost.
+      </p>
+      <p>
+        Pods goal is to assist organizations with the integration of the medical
+        supply chain into clinical operations by providing real time
+        medical supply charge capture and inventory management. Our process can
+        facilitate medical supply cost accounting. Pods
+        medical supply chain solution can sit on top of your current procurement
+        software solution and/or EHR.
+      </p>
+      <p>
+        Pods welcomes the opportunity to learn more about your organization. We aim
+        to share how pods can help your organization lower medical supply costs
+        while achieving the quadruple aim of better quality, lower cost, improved
+        patient experience, and an improved clinical experience.
+      </p>
+</div>
+<h5>Deepak Poddar, CEO</h5>
+</div>
+
+<div class="img-container row">
+
+    <div class="col-md-4 col-lg-4 col-sm-12" (click)="openConsultForm('health')">
+        <img src="assets/bgImg/healthConsultation.png" alt="">
+        <h6>HEALTH SYSTEM CONSULTATIONS</h6>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12" routerLink="consultform" (click)="openConsultForm('govt')">
+        <img src="assets/bgImg/govtConsultation.jpg" alt="">
+        <h6>GOVERNMENT CONSULTATIONS</h6>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12" routerLink="consultform" (click)="openConsultForm('asc')">
+        <img src="assets/bgImg/ascConsultation.png" alt="">
+        <h6>ASC CONSULTATIONS</h6>
+    </div>
+
+</div>

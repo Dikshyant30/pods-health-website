@@ -1,0 +1,26 @@
+    <div class="row cat-list">
+      <ng-container *ngIf="subCategories.length">
+        <div class="col-lg-3 col-xs-6 col-sm-4 col-md-3" *ngFor="let sCat of subCategories">
+          <div
+            class="card border-0 p-2 cardShadow"
+            style="cursor: pointer"
+            (click)="
+            goToSubCatList(sCat.subCategoryId, sCat.subCategoryName)
+            "
+          >
+            <img
+              [src]="_imgPath.getFilePath(sCat.imageLink)"
+              class="card-img-top img-fluid img-center"
+              alt="..."
+            />
+
+            <div class="card-body">
+              <p class="card-title">{{ sCat.subCategoryName }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <div class="col-md-12 text-center mt-5" *ngIf="noData">
+        <h3>No SubCategory Found</h3>
+      </div>
+    </div>

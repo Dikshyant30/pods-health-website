@@ -1,0 +1,72 @@
+.about-company {
+  // background-color: #f3f5f6;
+  padding-bottom: 4rem;
+  .details {
+    position: relative;
+    // left: 4rem;
+    margin: 0rem 16rem;
+
+    .btn-outline-primary:hover {
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn:hover {
+      color: #212529;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 60% !important;
+    }
+
+    img {
+      height: 17rem;
+    }
+  }
+
+  title {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .btn-blue {
+    color: #fff;
+    color: #007bff;
+    border-color: #007bff;
+  }
+
+  .zoom {
+    transition: transform 0.2s;
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+}
+
+.padding-left {
+    padding-left: 14rem
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+    .about-company .details {
+      position: relative;
+      margin: -5rem 3rem;
+    }
+    .padding-left {
+        padding-left: 0rem
+    }
+}
+

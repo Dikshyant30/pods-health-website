@@ -1,0 +1,248 @@
+.main {
+  padding: 2rem 11rem 2rem 13rem;
+  background-color: #f3f5f6;
+  overflow-y: hidden;
+}
+
+.bg-width {
+  width: 90%;
+}
+
+.field {
+  width: 100%;
+}
+
+.field-container {
+  width: 42%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.readMore_btn {
+  background: #c82333 !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid #bd2130 !important;
+  border-radius: 5px;
+  font-weight: 600 !important;
+  width: 50%;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.details-container {
+  padding: 2rem;
+}
+P {
+  text-align: left;
+  line-height: 20px;
+}
+.divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f3f5f6;
+}
+
+.padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.border {
+  //   border-top: 2px solid #919191;
+  width: 1131px;
+  opacity: 0.6;
+  background-color: #919191;
+}
+
+.blue-btn {
+  background-color: rgba(6, 127, 249, 0.34901960784313724);
+  color: #0680f9;
+  width: 100% !important;
+  outline: none !important;
+}
+
+.blue-btn:hover {
+  color: black;
+}
+
+.img-container {
+  h6 {
+    position: relative;
+    color: white;
+    z-index: 1;
+    top: -14.5vh;
+    text-align: center;
+    font-weight: 600;
+  }
+  .big-img {
+    height: 14.65rem;
+  }
+  img {
+    filter: brightness(60%);
+    height: 14rem;
+  }
+  .card-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    top: -13.5rem;
+    padding: 20px 30px;
+    .card-title {
+      font-size: 16px;
+    }
+    .card-desc {
+      margin-top: 1rem;
+      font-size: 16;
+    }
+  }
+}
+
+.height {
+  height: 17.6rem;
+}
+.bsp {
+  padding: 3rem 11rem 2rem 18em;
+}
+
+@media only screen and (min-device-width: 1290px) and (max-device-width: 1440px) and (orientation: landscape) {
+  .img-container {
+    img {
+      height: 13rem;
+    }
+    .big-img {
+      height: 13.4rem;
+    }
+  }
+  .height {
+    height: 16rem;
+  }
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .main {
+    padding: 2rem;
+  }
+  .bsp {
+    padding: 3rem;
+  }
+  .padding {
+    display: none;
+  }
+  .field-container {
+    width: 99%;
+  }
+  .iti {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+  }
+
+  .bigImage {
+    position: relative;
+    top: 450px;
+  }
+  .bigImage2 {
+    position: relative;
+    top: 135px;
+  }
+  .img-container .big-img {
+    height: 14.65rem;
+    width: 104%;
+  }
+  .img-container img {
+    filter: brightness(60%);
+    height: 14rem;
+    width: 103%;
+  }
+  .details-container {
+    padding: 2rem 2rem 0rem 0rem;
+  }
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .main {
+    padding: 2rem;
+  }
+  .bsp {
+    padding: 3rem;
+  }
+  .padding {
+    display: none;
+  }
+  .field-container {
+    width: 99%;
+  }
+  .iti {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+  }
+
+  .bigImage {
+    position: relative;
+    top: 450px;
+  }
+  .bigImage2 {
+    position: relative;
+    top: 135px;
+  }
+  .img-container .big-img {
+    height: 14.65rem;
+    width: 104%;
+  }
+  .img-container img {
+    filter: brightness(60%);
+    height: 14rem;
+    width: 103%;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 432px) {
+  .bigImage2 {
+    position: relative;
+    top: 150px;
+  }
+}
+@media only screen and (min-device-width: 433px) and (max-device-width: 725px) {
+  .iti {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+  }
+  .bigImage2 {
+    position: relative;
+    top: 155px;
+  }
+}
+@media only screen and (min-device-width: 726px) and (max-device-width: 767px) {
+  .iti {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+  }
+  .bigImage2 {
+    position: relative;
+    top: 180px;
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+::ng-deep .iti {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+

@@ -1,0 +1,89 @@
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main {
+  position: relative;
+  left: 4vw;
+}
+.about-container1 {
+  padding: 10px 46px 115px 69px;
+  // padding: 111px 99px 111px 70px;
+}
+.img-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.content1 {
+  position: relative;
+  left: 8.5vw;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.field {
+  width: 100%;
+}
+
+.field-container {
+  width: 42%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.readMore_btn {
+  background: #ec3933 !important;
+  color: #fff !important;
+  padding: 10px !important;
+  border: 1px solid #ec3933 !important;
+  border-radius: 5px;
+  font-weight: 600 !important;
+  width: 20%;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.podCard2 {
+  padding: 15px;
+  width: 12rem;
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .about-container1 {
+    padding: 13px 46px 115px 18px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+::ng-deep .iti {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.readMore_btn:hover {
+  background: #0680f9 !important;
+  border-color: #0680f9 !important;
+}
+

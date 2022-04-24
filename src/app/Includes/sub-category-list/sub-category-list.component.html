@@ -1,0 +1,28 @@
+<div class="row cat-list">
+  <ng-container *ngIf="subCatProds?.length">
+    <div class="col-lg-3 col-xs-6 col-sm-4 col-md-3" style="cursor: pointer;" *ngFor="let sCatProd of subCatProds">
+      <div
+        class="card border-0 p-2 cardShadow"
+        
+        (click)="goToProductDetails(sCatProd.productId)"
+      >
+        <!-- <img [src]="getFilePath(subCat.imageLink)" class="card-img-top img-fluid" alt="..."> -->
+        <img
+          [src]="_imgPath.getFilePath(sCatProd.imageLink)"
+          class="card-img-top img-fluid img-center"
+          alt="..."
+        />
+  
+        <div class="card-body">
+          <!-- <h5 class="card-title">{{subCat.subCategoryName}}</h5> -->
+          <p class="card-title">{{ sCatProd.productName }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <div class="col-md-12 text-center mt-5" *ngIf="noData">
+    <h3>No Product Found</h3>
+  </div>
+</div>
+
+<!-- subCatProds==null || !(subCatProds?.length) -->

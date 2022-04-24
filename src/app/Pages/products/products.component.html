@@ -1,0 +1,41 @@
+<div class="mob-height">
+  <div class="align-title">
+    <div class="caption">
+      <h3>{{title}}</h3>
+    </div>
+  </div>
+  <img
+    [src]="_imgPath.getFilePath(bannerImg)"
+    class="d-block w-100 bg-img"
+    alt="..."
+  />
+</div>
+<div class="aboutBg padding-list">
+  <app-product-list></app-product-list>
+</div>
+<div class="best-prod">
+  <app-best-selling-products></app-best-selling-products>
+</div>
+<div>
+  <div class="align-title2">
+    <div class="product-caption">
+      <h4>Get the answers you need.</h4>
+      <a (click)="goToContacts()"
+        ><button class="btn contact-btn bg-white">
+          Contact a Representative
+        </button></a
+      >
+    </div>
+  </div>
+  <img
+    src="assets/bgImg/contactBg.jpg"
+    class="d-block w-100 bg-img"
+    alt="..."
+  />
+  <div class="col-md-12">
+    <div class="row bgBar">
+      <div class="col-md-6">Contact us</div>
+      <div class="col-md-6">Customer Service: +1 604 912 0520</div>
+    </div>
+  </div>
+</div>

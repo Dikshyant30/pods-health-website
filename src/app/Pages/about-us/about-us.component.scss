@@ -1,0 +1,262 @@
+.about-container {
+  background-color: #21465c !important;
+  padding: 7rem 10rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+}
+
+.contact_btn {
+  border: 1px solid #fff !important;
+  outline: none;
+  font-weight: 400 !important;
+  width: 16rem;
+}
+
+.para {
+  text-align: justify;
+  word-spacing: 2px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 14px !important;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.para-container {
+  margin-left: 62px;
+  margin-top: 22px;
+}
+
+.about-company {
+  background-color: #f3f5f6;
+  padding: 7rem 0rem;
+  .details {
+    position: relative;
+    left: 2rem;
+    margin: 0rem 16rem;
+
+    .btn-outline-primary:hover {
+      color: #fff !important;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn:hover {
+      color: #212529;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 40% !important;
+    }
+
+    img {
+      height: 17rem;
+    }
+  }
+
+  title {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+}
+
+.podCard {
+  background: #fff;
+  padding: 35px;
+  width: 14rem;
+  p {
+    text-align: unset;
+    word-spacing: 0px;
+  }
+}
+
+.podCard2 {
+  background: transparent;
+  padding: 35px;
+  width: 14rem;
+  border: 1px solid hsla(0, 0%, 86.7%, 0.8666666666666667);
+  p {
+    text-align: unset;
+    word-spacing: 0px;
+  }
+}
+
+// .margin {
+//     margin-bottom: 4rem;
+// }
+.num {
+  margin-bottom: 0px;
+  // position: relative;
+  // top: 1.3rem;
+  //     position: relative;
+  //    left: 0;
+  //    bottom: 0;
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f3f5f6;
+}
+.border {
+  //   border-top: 2px solid #919191;
+  width: 1000px;
+  opacity: 0.6;
+  background-color: #919191;
+}
+
+.aboutBg {
+  background-color: #f3f5f6;
+}
+
+.align-text {
+  padding: 62px 111px;
+}
+
+.bgPod {
+  background-color: #0680f9;
+  padding: 70px;
+}
+
+.img2 {
+  display: block;
+}
+
+.btn-find {
+  width: 30%;
+}
+
+.top {
+  margin-top: 10px;
+}
+.para-top {
+  padding-top: 5rem;
+}
+.office-top {
+  padding-top: 5rem;
+}
+
+.pods {
+  margin-top: 32px;
+}
+.pods-content {
+  margin-top: 32px;
+  margin-bottom: 72px;
+}
+@media only screen and (min-device-width: 1290px) and (max-device-width: 1440px) and (orientation: landscape) {
+  .podCard2 {
+    padding: 15px;
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+  .para-container {
+    margin-left: 0px;
+    margin-top: 22 px;
+  }
+  .contact_btn {
+    width: 8rem;
+  }
+  .about-company .details {
+    left: 0;
+    margin: 0;
+  }
+  .about-company {
+    background-color: #f3f5f6;
+    padding: 2rem 0rem;
+  }
+  .mob-con {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .img2 {
+    display: none;
+  }
+  .about-company .details .btn {
+    width: 60% !important;
+  }
+  .podCard,
+  .podCard2 {
+    padding: 7px;
+    width: 29%;
+    h5 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 13px;
+      text-align: unset;
+      word-spacing: 0px;
+    }
+  }
+  .align-text {
+    padding: 26px 35px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .btn-find {
+    width: 49%;
+  }
+  .ceo {
+    justify-content: center;
+    display: flex;
+  }
+  .text-dark {
+    font-size: 22px;
+    text-align: center;
+    padding: 16px;
+  }
+  .para-top {
+    padding-top: 1rem;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .office-top {
+    padding-top: 2rem;
+  }
+  .pods {
+    margin-top: 18px;
+  }
+  .pods-content {
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+}
+.readMore_btn:hover {
+  background: #0680f9 !important;
+  border-color: #0680f9 !important;
+}
+
+.contact_btn:hover {
+  background: #0680f9 !important;
+  border-color: #0680f9 !important;
+}
+
+.btn-danger:hover {
+  background: #0680f9 !important;
+  border-color: #0680f9 !important;
+  color: #fff !important;
+}

@@ -1,0 +1,33 @@
+<div class="about-company">
+  <div class="details">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" style="padding-top: 5rem">
+      <div >
+        <img [src]="_imgPath.getFilePath(details.imageLink)" class="zoom" alt="" />
+      </div>
+      <div class="padding-left">
+        <h4 class="mt-3 title">
+          {{ details.productName }}
+        </h4>
+        <div #dataContainer></div>
+
+        <!-- <p>
+          {{ details.description }}
+        </p> -->
+        <p><strong>Product Code: </strong> {{ details.productCode }}</p>
+        <p>
+          <strong>Feature: </strong> <br />
+          <span [innerHTML]="details.features"></span>
+        </p>
+        <p><strong>Materials: </strong> {{ details.materials }}</p>
+        <p><strong>Certification: </strong> {{ details.certification }}</p>
+        <p><strong>Standards: </strong> {{ details.standards }}</p>
+        <p>
+          <strong>Country of Origin: </strong> {{ details.countryOfOrigin }}
+        </p>
+        <a (click)="goToContact()">
+          <button class="btn btn-blue mt-4">Products Inquiry</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

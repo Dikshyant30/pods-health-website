@@ -1,0 +1,254 @@
+<!-- <div class="container">
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+</div> -->
+
+<div class="containered" >
+  <div class="row footer" >
+    <div class="col-md-5 mb-4" >
+      <div class="row" >
+        <div class="medical col-md-6 col-6" >
+          <ul style="list-style: none; padding: 0px; user-select: auto">
+            <h5 >Categories for Business</h5>
+            <li >
+              <a  (click)="goToDetails('2c9fa5557cea0795017ceabb0d9a0007','Medical Devices and Equipment')"
+                >Medical Facilities</a
+              >
+            </li>
+            <li >
+              <a 
+                >Government Sector</a
+              >
+            </li>
+            <li >
+              <a  style="cursor: pointer;"  (click)="goToDetails('2c9fa5557cea0795017cecd478820081','Veterinary Care')" >Veterinary Care</a>
+            </li>
+            <li >
+              <a >First Responders</a
+              >
+            </li>
+            <li >
+              <a  style="cursor: pointer;" (click)="goToDetails('2c9fa5557ce96a15017ce9b417240004','Beauty Products')">Salon, Beauty &amp; Household</a
+              >
+            </li>
+            <li >
+              <a >Educational Institutes</a
+              >
+            </li>
+            <li >
+              <a >Sports &amp; Entertainment</a
+              >
+            </li>
+            <li >
+              <a >Private Sector</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="brands col-md-6 col-6" >
+          <div class="row" >
+            <div class="col-md-12" >
+              <h5 class="" >Download Catalogs</h5>
+              <ul >
+                <a style="cursor: pointer;"  (click)="goToCatalog()"
+                  ><li >Pods Catalogs</li></a
+                >
+              </ul>
+            </div>
+            <div class="col-md-12 mt-5" >
+              <h5 class="" >Surgical Kits</h5>
+              <ul >
+                <li >
+                  <a >Cardiology kits</a
+                  >
+                </li>
+                <li >
+                  <a >Orthopedic kits</a
+                  >
+                </li>
+                <li >
+                  <a >Pulmonary kits</a
+                  >
+                </li>
+                <li >
+                  <a >Surgical supplies and kits</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 d-flex_j d-none1" >
+      <div class="border1" ></div>
+    </div>
+    <div class="col-md-6" >
+      <div class="support row" >
+        <div class="col-md-6 col-6" >
+          <h4 >Help</h4>
+          <ul >
+            <a routerLink="help" (click)="goToFAQ()"
+              ><li >FAQs</li></a
+            >
+            <li ></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-6" >
+          <h4 >About Us</h4>
+          <ul >
+            <a (click)="goToAbout()" 
+              ><li >About POD Health</li></a
+            ><a (click)="goToConsultation()" 
+              ><li >Consult Services</li></a
+            ><a (click)="goToTeam()"
+              ><li >Our Team</li></a
+            ><a (click)="goToCareer()"
+              ><li >Careers</li></a
+            >
+          </ul>
+        </div>
+        <div class="col-md-12" >&nbsp;</div>
+        <div class="col-md-12" >&nbsp;</div>
+        <div class="col-md-12" >&nbsp;</div>
+        <div class="col-md-12" >&nbsp;</div>
+        <div class="col-md-12" >
+          <div class="business_Icon" fxLayout="row" fxLayoutAlign="space-between">
+            <a
+              href="https://www.fda.gov/"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="assets/img/FDA.png"
+                  alt="insta"
+                  style="width: 35px; user-select: auto" /></span></a
+            ><a
+              href="https://ec.europa.eu/growth/Single-market/ce-marking"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="assets/img/ce.png"
+                  alt="twitter"
+                  style="width: 25px; user-select: auto" /></span></a
+            ><a
+              href=" https://www.cdc.gov/"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="/assets/img/cdc.jpeg"
+                  alt="facebook"
+                  style="width: 27px; user-select: auto" /></span></a
+            ><a
+              href="https://www.cdc.gov/niosh/"
+              target="_blank"
+              
+            >
+              <span 
+                ><img
+                  src="assets/img/niosh.jpeg"
+                  alt="Linkedin"
+                  style="width: 80px; user-select: auto" /></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12" >
+      <div class="row" >
+        <div class="col-md-6 col-6" >
+          <div class="row mt-3 partner" >
+            <div class="col-md-3 col-6" >
+              <a
+                href="https://www.podshealth.us/"
+                target="_blank"
+                
+                ><img
+                  src="data:image/png;base64,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"
+                  alt="/"
+                  width="100"
+                  
+                />
+                <p >podshealth.us</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-6" >  
+          <!-- <form >
+            <div class="form-group" >
+              <label > Search Pod Health</label
+              ><input
+                type="text"
+                class="form-control searchIN"
+                placeholder="Search"
+                
+              /><a 
+                ><button class="btn" >
+                  <mat-icon style="color: white;">search</mat-icon>
+                </button>
+              </a>
+            </div>
+          </form> -->
+          <h4 class="mt-3 mb-3" >FOLLOW US</h4>
+          <div class="social_Icon" fxLayout="row" fxLayoutAlign="space-between">
+            <a
+              href="https://www.instagram.com/podshealth/"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="assets/img/insta.svg"
+                  alt="insta"
+                   /></span></a
+            ><a
+              href="https://twitter.com/LtdPods"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="assets/img/twitter.svg"
+                  alt="twitter"
+                   /></span></a
+            ><a
+              href=" https://www.facebook.com/Pods-health-101111225247831/"
+              target="_blank"
+              
+              ><span 
+                ><img
+                  src="assets/img/fb.svg"
+                  alt="facebook"
+                  style="width: 10px; user-select: auto" /></span></a
+            ><a
+              href="https://www.youtube.com/channel/UCijKjwEbM0SFX7wCnmog14Q"
+              target="_blank"
+              
+            >
+              <span 
+                ><img
+                  src="assets/img/yt.svg"
+                  alt="youtub"
+                   /></span></a
+            ><a
+              href="https://www.linkedin.com/company/pods-group-ltd"
+              target="_blank"
+              
+            >
+              <span 
+                ><img
+                  src="assets/img/in.png"
+                  alt="Linkedin"
+                   /></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

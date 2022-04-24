@@ -1,0 +1,87 @@
+.card-title {
+  text-align: center;
+  user-select: auto;
+  font-weight: 500;
+  position: relative;
+  top: 2.5vh;
+  font-size: 16px;
+}
+
+.cat-list {
+  height: 120vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 72vw;
+}
+
+.cardShadow {
+  box-shadow: none;
+  width: 83%;
+}
+.cardShadow:hover {
+  transition-delay: 0.2s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  .card-title {
+    position: relative;
+    top: 1.5vh;
+    color: #0680f9;
+  }
+}
+
+.img-center {
+  padding: 10px 26px 23px;
+}
+
+@media only screen and (min-device-width: 1290px) and (max-device-width: 1440px) and (orientation: landscape) {
+  .cat-list {
+    // position: relative;
+    // top: -10.5vh;
+  }
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .col-sm-4 {
+    position: relative;
+    width: 50%;
+    min-height: 1px;
+    // padding-right: 15px;
+    // padding-left: 15px;
+  }
+  .img-center {
+    padding: 0;
+  }
+  .cardShadow {
+    width: 100%;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .cat-list {
+    width: 93vw;
+    height: 70vh !important;
+  }
+  .cardShadow .card-title {
+    position: relative;
+    top: 1.5vh;
+    color: #0680f9;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 500px) {
+  .cat-list {
+    height: 90vh !important;
+  }
+}
+@media only screen and (min-device-width: 576px) and (max-device-width: 767) {
+  .cat-list {
+    height: 70vh !important;
+  }
+}
+
+// @media (min-width: 992px)
+// {
+//   .col-lg-4 {
+//     flex: 0 0 auto;
+//     width: 22.333333%;
+// }
+// }

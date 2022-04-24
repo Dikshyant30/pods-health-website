@@ -1,0 +1,104 @@
+.aboutBg {
+  background-color: #f3f5f6;
+  padding-bottom: 56px;
+}
+.main-faq {
+  // @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+@font-face {
+  font-family: helveticaneueregular;
+  src: url(../../../assets/fonts/helveticaneuemedium.ttf) format("opentype");
+}
+
+
+.expansion-container {
+  padding: 50px 300px;
+}
+
+::ng-deep .mat-expansion-panel {
+  margin-bottom: 5px !important;
+}
+
+mat-panel-title {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.9375rem;
+}
+
+h3 {
+  font-size: 22px !important;
+  font: 400 16px/28px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+}
+
+.subPara {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #dee2e6!important;
+  width: 31rem;
+  min-height: 10rem !important;
+  background: none!important;
+  padding: 20px;
+
+  .p1 {
+    color: #0680f9!important;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+}
+
+.panel {
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+}
+
+.header-panel {
+  padding: 10px;
+  // border: 1px solid;
+  // background: rgba(0,0,0,.04);
+}
+
+::ng-deep .mat-expansion-indicator {
+  position: relative;
+  top: -0.5vh;
+}
+
+.contact-btn {
+  color: #212529;
+  text-decoration: none;
+  width: 80%!important;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+}
+
+.call {
+  position: relative;
+  left: 7vw;
+}
+.mail {
+  position: relative;
+  left: -7vw;
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .main-faq .expansion-container {
+    padding: 50px 27px;
+  }
+  .call,.mail {
+    position: relative;
+    left: 0vw;
+  }
+}

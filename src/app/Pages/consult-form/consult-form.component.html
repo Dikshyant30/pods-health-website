@@ -1,0 +1,158 @@
+<div class="row main" *ngIf="consultType === 'health'">
+  <div class="col-md-6 about-text">
+    <div class="about-container1">
+      <h2>Clinically Integrated Medical Supply Chain</h2>
+      <p>
+        Pods Health welcomes the chance to provide a free assessment of your
+       
+        medical supply requirements. Our goal is to demonstrate how pods can
+       
+        integrate the medical supply chain with clinical operations by
+        incorporating
+        real time inventory management and procurement, real time supply cost
+       
+        integrated with CPT codes in order to facilitate activity based cost
+       
+        accounting.
+      </p>
+      <p>
+        In addition, pods offers a unique Onshore Inventory Supply Program in
+        order
+        to minimize the risk of supply shortages and significantly mitigate
+        extreme
+        price fluctuations. Contact pods today for your free consultation.
+      </p>
+      <p>Deepak Poddar, CEO</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12 img-container">
+    <img
+      src="assets/bgImg/healthSystem.jpg"
+      alt="about"
+      style="height: 25rem"
+    />
+  </div>
+</div>
+<div class="row main" *ngIf="consultType === 'govt'">
+  <div class="col-md-6 col-sm-12 about-text">
+    <div class="about-container1">
+      <h2>Clinically Integrated Medical Supply Chain</h2>
+      <p>
+        Pods Health has been a reliable supplier of authentic PPE and other
+        medical
+        supplies at a fair price to government entities in the United States,
+        France,
+        and United Kingdom. Pods has reliably supplied orders in the millions
+        forauthentic 3M N95 surgical masks, gowns, and gloves.
+      </p>
+      <p>
+        Pods welcomes the chance to provide a complementary assessment of your
+       
+        PPE requirements. Pods can reliably supply your PPE needs at a price
+        pointthat is likely at least 5% below your current cost.
+      </p>
+      <p>
+        In addition, pods offers a unique Onshore Inventory Supply Program in
+        order
+        to minimize the risk of supply shortages and significantly mitigate
+        extreme
+        price fluctuations. Contact pods today for your free consultation.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12 img-container">
+    <img src="assets/bgImg/govtConsult.jpg" alt="about" style="height: 25rem" />
+  </div>
+</div>
+<div class="row main" *ngIf="consultType === 'asc'">
+  <div class="col-md-6 about-text">
+    <div class="about-container1">
+      <h2>Clinically Integrated Medical Supply Chain</h2>
+      <p>
+        Pods Health can provide a comprehensive medical supply chain solution
+        and
+        advisory on inventory management for your Ambulatory Surgery Center
+       
+        (ASC). Pods can create customized cost-efficient item packs for your
+        ASC.
+      </p>
+      <p>
+        Pods offers a complementary assessment of your existing surgical
+        supplies.
+        Pods can likely deliver a surgical supply solution that offers at least
+        5%
+        off your current surgical supply cost. Pods welcomes the chance to
+       
+        learn more about your ASC and discuss how pods can provide quality cost-
+       
+        efficient surgical supplies in this value based purchasing environment.
+      </p>
+      <p>
+        Finally, pods offers a unique Onshore Inventory Supply Program in order
+        to
+        minimize the risk of supply shortages and significantly mitigate extreme
+        price
+        fluctuations. Deepak Poddar, CEO
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 img-container">
+    <img src="assets/bgImg/ascConsult.jpg" alt="about" style="height: 25rem" />
+  </div>
+</div>
+
+<div class="col-md-12 mt-100 main" style="position: relative;left: 8.5vw;">
+  <h4 *ngIf="consultType === 'health'">HEALTH SYSTEM CONSULTATIONS</h4>
+  <h4 *ngIf="consultType === 'govt'">GOVERNMENT CONSULTATIONS</h4>
+  <h4 *ngIf="consultType === 'asc'">ASC CONSULTATIONS</h4>
+</div>
+<div  class="col-md-12 mt-100 main content1">
+  <form>
+      <div  fxLayout="column">
+          <div fxLayout="row" fxLayoutGap="24px">
+              <div class="field-container">
+                  <label for="fname">First Name*</label><br>
+                  <input type="text" id="fname" name="fname" class="form-control field"><br>
+              </div>
+              <div class="field-container">
+                  <label for="lname">Last Name*</label><br>
+                  <input type="text" id="lname" name="lname" class="form-control field"><br>
+              </div>
+          </div>
+          <div  fxLayout="row" fxLayoutGap="24px">
+              <div class="field-container">
+                  <label for="fname">Email*</label><br>
+                  <input type="email" id="fname" name="fname" class="form-control field"><br>
+              </div>
+              <div class="field-container">
+                  <label for="fname">Company Name</label><br>
+                  <input type="text" id="fname" name="fname" class="form-control field"><br>
+              </div>
+          </div>
+          <div  fxLayout="row" fxLayoutGap="24px">
+            <div class="field-container">
+              <label for="fname">Contact Person*</label><br>
+              <input type="text" id="fname" name="fname" class="form-control field" ng2TelInput  [ng2TelInputOptions]="{ separateDialCode:true}"><br>
+            </div>
+            <div class="field-container">
+                <label for="fname">Company's Addressss*</label><br>
+                <input type="text" id="fname" name="fname" class="form-control field"><br>
+            </div>
+          </div>
+          <div  fxLayout="row" fxLayoutGap="24px">
+            <div class="field-container">
+              <label for="fname">Phone*</label><br>
+              <input type="number" id="fname" name="fname" class="form-control field"><br>
+            </div>
+            <div class="field-container">
+                <label for="fname">Any Specific Requirement or Request, Please Specify Here</label><br>
+                <input type="text" id="fname" name="fname" class="form-control field"><br>
+            </div>
+          </div>
+          
+          <div>
+              <button class="readMore_btn" style="margin-top: 0px;">Send</button>
+          </div>
+      </div>
+  </form>
+</div>

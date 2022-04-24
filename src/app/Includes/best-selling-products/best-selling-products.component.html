@@ -1,0 +1,27 @@
+
+<h2 class="heading" style="text-align: left">Best Selling Products</h2>
+
+<div class="row list">
+    <!-- <div class="row" *ngFor="let subCat of subCategories"> -->
+    <ng-container>
+      <div class="col-lg-3 col-xs-6 col-sm-4 col-md-3" style="cursor: pointer;" *ngFor="let item of bestProds">
+        <div
+          class="card border-0 p-2 cardShadow"
+          
+          (click)="goToProductDetails(item.productId)"
+        >
+          <!-- <img [src]="getFilePath(subCat.imageLink)" class="card-img-top img-fluid" alt="..."> -->
+          <img
+            [src]="_imgPath.getFilePath(item.imageLink)"
+            class="card-img-top img-fluid img-center"
+            alt="..."
+          />
+
+          <div class="card-body">
+            <!-- <h5 class="card-title">{{subCat.subCategoryName}}</h5> -->
+            <p class="card-title">{{ item.productName }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>

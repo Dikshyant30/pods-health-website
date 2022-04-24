@@ -1,0 +1,50 @@
+.about-company {
+  background-color: #f3f5f6;
+  padding: 7rem 0rem;
+  .details {
+    position: relative;
+    left: 2rem;
+    margin: 0rem 16rem;
+
+    .btn-outline-primary:hover {
+      color: #fff !important;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn:hover {
+      color: #212529;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 40% !important;
+    }
+
+    img {
+      height: 17rem;
+    }
+  }
+
+  title {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .about-company {
+    background-color: #f3f5f6;
+    padding: 3rem 0rem;
+  }
+  .about-company .details {
+    position: relative;
+    left: 0px;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .title {
+    font-size: 22px !important;
+  }
+}

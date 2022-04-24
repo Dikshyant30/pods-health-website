@@ -1,0 +1,143 @@
+.align-title {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+.bg-img {
+  position: relative;
+  top: -122px;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.479);
+  position: relative;
+  top: 173px;
+  padding: 40px 20px;
+  color: #fff;
+  text-transform: capitalize;
+  width: 40%;
+  text-align: center;
+  z-index: 1;
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // background-color: #f3f5f6;
+}
+.border {
+  width: 1000px;
+  opacity: 0.6;
+  background-color: #919191;
+}
+
+.product-caption {
+  background-color: rgba(0, 0, 0, 0.479);
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  top: 173px;
+  z-index: 1;
+}
+
+.align-title2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 13vw;
+}
+
+.contact-btn {
+  height: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.bgBar {
+  background-color: #525151;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: -17vh;
+}
+
+.aboutBg {
+  background-color: #f3f5f6;
+  position: relative;
+  top: -20vh;
+}
+
+.mob-height {
+  position: relative;
+  top: -3vh;
+}
+
+.padding-list {
+  padding: 30px 111px;
+}
+
+.best-prod {
+  padding: 0px 111px 30px 111px; 
+  position: relative; 
+  top: -10vh;
+}
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .best-prod {
+    padding: 30px 111px 30px 61px;
+    top: -20vh;
+  }
+  .bg-img {
+    top: -40px;
+  }
+  .caption {
+    top: 36px;
+    padding: 8px 5px;
+    width: 72%;
+  }
+  .mob-height {
+    height: 212px;
+    h3 {
+      font-size: 10px;
+    }
+  }
+  .bgBar {
+    font-size: 10px;
+    top: -7vh;
+    padding: 0;
+  }
+  .product-caption {
+    padding: 11px;
+    top: 33px;
+    left: 45px;
+    h4 {
+      font-size: 13px;
+      line-height: 2px;
+    }
+  }
+  .contact-btn {
+    font-size: 10px;
+    margin-top: 0.5rem;
+    padding: 0;
+    height: 25px;
+  }
+
+  .padding-list {
+    padding: 30px;
+  }
+}
+@media only screen and (min-device-width: 1290px) and (max-device-width: 1440px) and (orientation: landscape) {
+  .aboutBg {
+    top: -22vh;
+  }
+}
+
+.contact-btn:hover {
+  background: #0680f9 !important;
+  border-color: #0680f9 !important;
+  color: #fff !important;
+}

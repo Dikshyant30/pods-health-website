@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html,
+body {
+  height: 100%;
+  // overflow-x: hidden;
+}
+
+* {
+  // font-family: helveticaneueregular;
+  font-weight: 490;
+}
+
+@font-face {
+  font-family: helveticaneueregular;
+  src: url(assets/fonts/helveticaneuemedium.ttf) format("TrueType");
+  font-weight: 100;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+.main {
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  overflow-y: scroll;
+  background: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+  border-radius: 10px;
+}
+
+p {
+  text-align: justify;
+  word-spacing: 2px;
+}
+
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  ::-webkit-scrollbar {
+    width: 2px;
+    overflow-y: scroll;
+    background: transparent;
+    cursor: pointer;
+  }
+}

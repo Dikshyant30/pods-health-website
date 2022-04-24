@@ -1,0 +1,231 @@
+<div class="main">
+  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="4rem">
+    <div fxFlex="50%">
+      <div>
+        Rehash your hospital supply chain. <br />
+        Better products. Quick delivery. <br />
+        Send us an Inquiry. <br />
+        Find what best suits your organization.
+      </div>
+      <div class="col-md-12" style="margin-top: 3rem">
+        <form action="https://formsubmit.co/info@podshealth.com" method="POST">
+          <input type="hidden" name="_next" value="https://www.podshealth.com/#/thankyou">
+          <div fxLayout="column">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="24px" fxLayoutGap.lt-md="-12px">
+              <div class="field-container">
+                <label for="fname">Name</label><br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  maxlength="25"
+                  class="form-control field"
+                  required
+                /><br />
+              </div>
+              <div class="field-container">
+                <label for="contact">Contact</label><br />
+                <input
+                  type="number"
+                  id="contact"
+                  name="contact"
+                  maxlength="15"
+                  class="form-control field"
+                  ng2TelInput
+                  [ng2TelInputOptions]="{ separateDialCode:true}"
+                  required
+                /><br />
+              </div>
+            </div>
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="24px" fxLayoutGap.lt-md="-12px">
+              <div class="field-container">
+                <label for="email">Email</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  maxlength="25"
+                  class="form-control field"
+                  required
+                /><br />
+              </div>
+              <div class="field-container">
+                <label for="business">Business</label><br />
+                <input
+                  type="text"
+                  id="business"
+                  name="business"
+                  maxlength="25"
+                  class="form-control field"
+                  
+                /><br />
+              </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="24px">
+              <div class="field-container">
+                <label for="preference">Product preference</label><br />
+                <input
+                  type="text"
+                  id="preference"
+                  name="preference"
+                  maxlength="25"
+                  class="form-control field"
+                  
+                /><br />
+              </div>
+              <!-- <div class="field-container">
+                              <label for="fname">Company's Addressss*</label><br>
+                              <input type="text" id="fname" name="fname" class="form-control field"><br>
+                          </div> -->
+            </div>
+            <div fxLayout="row" fxLayoutGap="24px">
+              <div class="form-group" style="width: 88%">
+                <label  for="message">Message</label
+                ><textarea
+                  type="text"
+                  name="message"
+                  class="form-control"
+                  maxlength="500"
+                  rows="4"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div>
+              <button
+                class="readMore_btn btn btn-danger"
+                type="submit"
+                style="margin-top: 2rem"
+              >
+                Send Inquiry
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div fxFlex="50%">
+      <div>
+        <img src="assets/bgImg/contactUsBg.jpg" class="bg-width" alt="" />
+      </div>
+      <div class="details-container">
+        <P> info@podshealth.com </P>
+        <P> +1 604 912 0520 (Main office) </P>
+        <P>
+          Suite 402, 100 Park Royal South West Vancouver, BC V7T 1A2 <br />
+          Canada
+        </P>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding">
+    <div class="border"></div>
+  </div>
+
+  <div class="padding row">
+    <div class="col-md-3 col-sm-6-full text-center mob-mt-20 mb-2">
+      <!-- routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector -->
+      <a
+        routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector"
+      >
+        <button class="btn blue-btn">Personal Protection</button>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6-full text-center mob-mt-20 mb-2">
+      <!-- routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector -->
+      <a
+        routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector"
+      >
+        <button class="btn blue-btn">Diagnosis and Training</button>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6-full text-center mob-mt-20 mb-2">
+      <!-- routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector -->
+      <a
+        routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector"
+      >
+        <button class="btn blue-btn">Dental and Beauty</button>
+      </a>
+    </div>
+
+    <div class="col-md-3 col-sm-6-full text-center mob-mt-20 mb-2">
+      <!-- routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector -->
+      <a
+        routerLink="/productsList/undefined/undefined/undefined/2/?=Government Sector"
+      >
+        <button class="btn blue-btn">Operative and Intensive Care</button>
+      </a>
+    </div>
+  </div>
+  <div
+    class="padding img-container height"
+    fxLayout="row"  fxLayout.lt-md="column" fxLayoutGap.lt-md="160px"
+    fxLayoutAlign="space-between"
+  >
+    <div fxFlex="33.33%">
+      <img src="assets/bgImg/hospital.png" alt="" />
+      <div class="card-content">
+        <p class="card-title"><strong>Hospitals</strong></p>
+        <p class="card-desc">
+          We offer PPE supplies for frontline hospital workers in healthcare
+          settings.
+        </p>
+      </div>
+    </div>
+    <div fxFlex="33.33%">
+      <img src="assets/bgImg/dental.png" alt="" />
+      <div class="card-content">
+        <p class="card-title"><strong>Dental Practices</strong></p>
+        <p class="card-desc">
+          Find the best quality and high-quality PPE protective equipment for
+          dental practices.
+        </p>
+      </div>
+    </div>
+    <div fxFlex="32.34%">
+      <img src="assets/bgImg/Practitioners.png" alt="" />
+      <div class="card-content">
+        <p class="card-title"><strong>Medical Practitioners</strong></p>
+        <p class="card-desc">
+          We provide personal protective equipment for medical staff and
+          patients.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="img-container"
+    fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="160px"
+    fxLayoutGap="1rem"
+    style="width: 99%"
+  >
+    <div fxFlex="50%" class="bigImage">
+      <img class="big-img" src="assets/bgImg/business.png" alt="" />
+      <div class="card-content">
+        <p class="card-title"><strong>Business</strong></p>
+        <p class="card-desc">
+          Find masks and other personal protective gearfor your employees and
+          customers.
+        </p>
+      </div>
+    </div>
+    <div fxFlex="50%" class="bigImage2">
+      <img class="big-img" src="assets/bgImg/other.png" alt="" />
+      <div class="card-content">
+        <p class="card-title">
+          <strong>Other frontline workers & Indivisuals</strong>
+        </p>
+        <p class="card-desc">
+          We carry protective gear for all indivisuals and frontline workers in
+          haxardous industries.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bsp">
+  <app-best-selling-products></app-best-selling-products>
+</div>

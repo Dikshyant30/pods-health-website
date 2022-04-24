@@ -1,0 +1,85 @@
+.logo {
+  width: 152px;
+  // margin-bottom: 10px;
+}
+nav {
+  border-top: 10px solid #0680f9;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 21;
+  width: 100%;
+  box-shadow: 0 2px 5px #eee;
+}
+
+.list {
+  padding: 0 8%;
+  width: 100%;
+  float: left;
+}
+.search {
+  padding: 0 3%;
+}
+
+.search {
+  padding: 8px;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  width: 71%;
+  margin-left: -11rem;
+}
+
+.searchBtn {
+  background-color: #ec3933;
+  padding: 8px !important;
+  border: 1px solid #ec3933;
+  border-radius: 0 5px 5px 0 !important;
+  width: auto !important;
+  margin-left: 0 !important;
+  color: white;
+}
+
+.nav-link {
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  padding: 5px 0;
+}
+
+.mob-title {
+  display: none;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color: #0680f9;
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) {
+  .logo {
+    width: 100px;
+  }
+  .list {
+    padding: 0;
+  }
+  .mob-title {
+    display: block;
+    position: relative;
+    left: -4vw;
+    color: #0680f9;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+
+// header {
+//     position: fixed;
+//     top: 0;
+//     z-index: 21;
+//     width: 100%;
+// }

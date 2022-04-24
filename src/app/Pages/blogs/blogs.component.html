@@ -1,0 +1,60 @@
+<div class="mob-height">
+  <div class="align-title">
+    <div class="caption">
+      <h3>{{title}}</h3>
+    </div>
+  </div>
+  <img [src]="_imgPath.getFilePath(bannerImg)" class="d-block w-100 bg-img" alt="..." />
+</div>
+<div
+  class="container card-container">
+  <div class="row">
+    <div class="col-12 col-lg-4 blog-cards" *ngFor="let item of blogs">
+      <div class="card border-0 p-2" style="width: 23rem;cursor: pointer;"  (click)="goToBlogDetails(item.blogsId)">
+        <img
+          [src]="_imgPath.getFilePath(item.image2Link)"
+          class="card-img-top img-fluid"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{item.blogTitle}}</h5>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider">
+    <div class="border"></div>
+  </div>
+  <div class="main">
+    <h4 class="mt-5 mb-5">World Wide News</h4>
+    <div fxLayout="row"  fxLayout.lt-md="column" fxLayoutAlign="space-between">
+      <div class="mt-2">
+        <a href="https://edition.cnn.com/" target="_blank">
+          <button mat-button>CNN</button>
+        </a>
+      </div>
+      <div class="mt-2">
+        <a href="https://www.cbc.ca/news/health" target="_blank">
+          <button mat-button>CBC</button>
+        </a>
+      </div>
+      <div class="mt-2">
+        <a href="https://www.globalnews.ca./health/" target="_blank">
+          <button mat-button>Gllobal News</button>
+        </a>
+      </div>
+      <div class="mt-2">
+        <a href="https://www.ctvnews.ca/health" target="_blank">
+          <button mat-button>Ctv News</button>
+        </a>
+      </div>
+      <div class="mt-2">
+        <a href="https://www.ctvnews.ca/health/coronavirus/" target="_blank">
+          <button mat-button>Corona Virus News</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

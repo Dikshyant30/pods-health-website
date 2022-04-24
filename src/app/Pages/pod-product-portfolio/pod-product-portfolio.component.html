@@ -1,0 +1,673 @@
+<!-- <div
+  id="carouselExampleIndicators"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item ">
+      <div class="carousel-text-container">
+        <h3 class="title">
+          Check it out our new <br />
+          product line
+        </h3>
+
+        <div class="button-container">
+          <div style="padding: 16px">
+            <a (click)="goToContact()" ><button class="btn btn-primary">Start Your inquiry</button></a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-text-container">
+        <h3 class="title">
+          REDEFINING SEAMLESS <br fxHide.gt-sm>
+          HEALTHCARE SUPPLY
+        </h3>
+
+        <div class="button-container">
+          <div  class="btn-pad" >
+            <a><button class="btn btn-primary">Start Your inquiry</button></a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li
+      data-target="#carouselExampleIndicators"
+      data-slide-to="0"
+      class="active"
+    ></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div  [ngClass]="i === 0 ? 'carousel-item active' : 'carousel-item'"
+    *ngFor="let img of bannerImgs; let i = index">
+      <div
+        class="carousel-text-container"
+      >
+        <h3 class="title">
+        {{img.bannerTitle}}
+        </h3>
+
+        <div class="button-container">
+          <div style="padding: 16px">
+            <a (click)="goToContact()"
+              ><button class="btn btn-primary">{{img.redirectionalButtonName1}}</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div>
+    <!-- <div class="carousel-item active">
+      <div
+        class="carousel-text-container"
+      >
+        <h3 class="title">
+
+        </h3>
+
+        <div class="button-container">
+          <div style="padding: 16px">
+            <a (click)="goToContact()"
+              ><button class="btn btn-primary">Start Your inquiry</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <div
+        class="carousel-text-container ele"
+      >
+        <h3 class="title">
+          REDEFINING SEAMLESS
+          HEALTHCARE SUPPLY
+        </h3>
+
+        <div class="button-container">
+          <div style="padding: 16px">
+            <a (click)="goToContact()"
+              ><button class="btn btn-primary">Start Your inquiry</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div> -->
+    <!-- <div class="carousel-item"  fxLayout="column" fxLayoutAlign="center center">
+      <div class="carousel-text-container ele" 
+      >
+        <h3 class="title">
+          REDEFINING SEAMLESS
+          HEALTHCARE SUPPLY
+        </h3>
+
+        <div class="button-container">
+          <div class="btn-pad">
+            <a><button class="btn btn-primary">Start Your inquiry</button></a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/bgImg/portfolioBg.png" class="d-block w-100" alt="..." />
+    </div> -->
+  </div>
+  <a
+    class="carousel-control-prev"
+    href="#carouselExampleIndicators"
+    role="button"
+    data-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a
+    class="carousel-control-next"
+    href="#carouselExampleIndicators"
+    role="button"
+    data-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="catagories-slider">
+  <div class="col-md-12 header-title">
+    <h2>Categories</h2>
+  </div>
+  <ng-image-slider
+    [images]="categories"
+    #nav
+    [infinite]="true"
+    [autoSlide]="2"
+    [showArrow]="false"
+    (imageClick)="getSubcategories($event)"
+  ></ng-image-slider>
+</div>
+
+<div class="catagories-slider">
+  <div class="col-md-12 header-title">
+    <h2>Most Popular</h2>
+  </div>
+  <ng-image-slider
+    [images]="products"
+    #nav
+    [infinite]="true"
+    [imageSize]="{ width: '375px', height: '382px' }"
+    [autoSlide]="2"
+    [showArrow]="true"
+    (imageClick)="getProductDetails($event)"
+  ></ng-image-slider>
+  <div class="container mt-5 mb-5">
+    <p style="text-align: center">
+      POD newest product line is HERE! Check out all of the new <br />
+      products developed for all of your needs. Our products have high <br />
+      performance and quality standards.
+    </p>
+  </div>
+  <div class="container GloveProd">
+    <div class="col-md-12 header-title">
+      <h2>Gloves</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <a
+          (click)="goToSubCatList('2c9fa5557cea0795017ceaa8d5550003', 'Gloves', 'POD Nitrile Exam Gloves','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/Nitrile exam gloves.png"
+                alt="/"
+                width="100%"
+                height="270px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Nitrile Exam gloves</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-6 mob_mt_3">
+        <a
+          (click)="goToSubCatList('2c9fa5557cea0795017ceaa9f10b0004', 'Gloves', 'POD Nitrile Chemo Gloves','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/Nitrile chemo gloves.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Nitrile Chemo gloves</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-3 mob_mt_3">
+        <a
+          (click)="goToSubCatList('2c9fa5557cea0795017ceaab8e460006', 'Gloves','POD Blended Gloves Hybrid','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/blended gloves hybrid.jpg"
+                alt="/"
+                width="100%"
+                height="270px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Blended Gloves Hybrid</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-6">
+        <a
+          (click)="goToSubCatList('2c9fa5557ccd77bc017ccd8e25150001', 'Gloves','POD Latex Gloves','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/latex gloves.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Latex gloves</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-3">
+        <a
+          (click)="goToSubCatList('2c9fa5557cea0795017ceaa75fbb0001', 'Gloves','POD Vinyl Gloves','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/vinyl gloves.png"
+                alt="/"
+                width="100%"
+                height="270px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Vinyl gloves</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-3">
+        <a
+          (click)="goToSubCatList('2c9fa5557cea0795017ceaa8d5550003', 'Gloves','POD Nitrile Aloe Coating Gloves','2c9fa5557ccd77bc017ccd8bd0870000')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/nitrile aloe coating gloves.jpg"
+                alt="/"
+                width="100%"
+                height="270px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Nitrile Aloe Coating gloves</h5>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="container GloveProd mt-3">
+    <div class="col-md-12 header-title">
+      <h2>Face Masks</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a (click)="goToSubCatList('2c9fa5557ccd77bc017ccd9082730005', 'Masks', 'Kids masks','2c9fa5557ccd77bc017ccd8f4fa10003')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/kids face masks.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Kids Face Mask</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4 mob_mt_3">
+        <a (click)="goToSubCatList('2c9fa5557ccd77bc017ccd8fe7ce0004', 'Masks','3-ply face masks','2c9fa5557ccd77bc017ccd8f4fa10003')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/3-ply face masks black.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>3-ply face masks Black</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4 mob_mt_3">
+        <a (click)="goToSubCatList('2c9fa5557cff1fb1017d0138d6160016', 'Masks', 'N 95 Respirator','2c9fa5557ccd77bc017ccd8f4fa10003')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/N95 respirator.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>N 95 Respirator</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4">
+        <a (click)="goToSubCatList('2c9fa5557cea0795017cec7a9d3c0061', 'Masks', 'KF 94 Mask','2c9fa5557ccd77bc017ccd8f4fa10003')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/KF 94 masks.png"
+                alt="/"
+                width="100%"
+                height="364px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>KF 94 Mask</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-8">
+        <a (click)="goToSubCatList('2c9fa5557ccd77bc017ccd8fe7ce0004', 'Masks', '3-ply face masks','2c9fa5557ccd77bc017ccd8f4fa10003')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/3-ply face masks blue.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>3-ply face masks Blue</h5>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="container GloveProd mt-3">
+    <div class="col-md-12 header-title">
+      <h2>Eye Protections</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a
+          (click)="
+            goToSubCatList(
+              '2c9fa5557cea0795017cebefc100001e',
+              'Caps, Eye Protection, Shoe Covers',
+              'Face Shield & Glasses',
+              '2c9fa5557ce96a15017ce9b4ed620005'
+            )
+          "
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/face shield with glasses.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Face Shield with Glasses</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-6 mob_mt_3">
+        <a
+          (click)="
+            goToSubCatList(
+              '2c9fa5557cea0795017cebee90f5001d',
+              'Caps, Eye Protection, Shoe Covers',
+              'Face Shield with Acrilic',
+              '2c9fa5557ce96a15017ce9b4ed620005'
+            )
+          "
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/face shield with acrilic.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Face Shield with Acrilic</h5>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="container GloveProd mt-3">
+    <div class="col-md-12 header-title">
+      <h2>Protective Covers</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a (click)="goToDetails('2c9fa5557ce6dd78017ce72554ab0000', 'Gowns')"
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/gowns.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>GOWNS</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4 mob_mt_3">
+        <a
+          (click)="
+            goToSubCatList(
+              '2c9fa5557ce96a15017ce9c7755d000e',
+              'Caps, Eye Protection, Shoe Covers',
+              'Head Cover',
+              '2c9fa5557ce96a15017ce9b4ed620005'
+            )
+          "
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/head cover.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Head Cover</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4 mob_mt_3">
+        <a
+          (click)="
+            goToSubCatList(
+              '2c9fa5557ce96a15017ce9c6dde2000d',
+              'Caps, Eye Protection, Shoe Covers',
+              'Boots Cover',
+              '2c9fa5557ce96a15017ce9b4ed620005'
+            )
+          "
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img src="assets/port/shoe cover.png" alt="/" width="100%" />
+            </div>
+            <div class="obverlayDiv">
+              <h5>SHOE COVER</h5>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="container GloveProd mt-3">
+    <div class="col-md-12 header-title">
+      <h2>COVID-19 And ICU Machines</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              ><div class="GloveDivouter">
+                <div class="gloveImg">
+                  <img
+                    src="assets/port/covid 19 PPE kit.png"
+                    alt="/"
+                    width="100%"
+                    height="238px"
+                  />
+                </div>
+                <div class="obverlayDiv">
+                  <h5>COVID 19 PPE KIT</h5>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-md-8 mob_mt_3">
+            <a
+              ><div class="GloveDivouter">
+                <div class="gloveImg">
+                  <img
+                    src="assets/port/covid 19 antigen test kit.png"
+                    alt="/"
+                    width="100%"
+                  />
+                </div>
+                <div class="obverlayDiv">
+                  <h5>COVID 19 Antigen Test KIT</h5>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-md-8">
+            <a
+              ><div class="GloveDivouter">
+                <div class="gloveImg">
+                  <img src="assets/port/safe pads.png" alt="/" width="100%" />
+                </div>
+                <div class="obverlayDiv">
+                  <h5>Safe Pads</h5>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-md-4">
+            <a
+              ><div class="GloveDivouter">
+                <div class="gloveImg">
+                  <img
+                    src="assets/port/finger oximeter.png"
+                    alt="/"
+                    width="100%"
+                    height="238px"
+                  />
+                </div>
+                <div class="obverlayDiv">
+                  <h5>Finger Oximeter</h5>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mob_mt_3">
+        <a
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/oxygen concentrators.png"
+                alt="/"
+                width="100%"
+                height="500px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Oxygen Concentrators</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-4">
+        <a
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/portable ventilators.png"
+                alt="/"
+                width="100%"
+                height="255px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Portable Ventilators</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-3">
+        <a
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/digital thermometer.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Digital Thermometer</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-5">
+        <a
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/oxygen ventilators.png"
+                alt="/"
+                width="100%"
+                height="255px"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Oxygen Ventilators</h5>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-md-12">
+        <a
+          ><div class="GloveDivouter">
+            <div class="gloveImg">
+              <img
+                src="assets/port/oxygen generators.png"
+                alt="/"
+                width="100%"
+              />
+            </div>
+            <div class="obverlayDiv">
+              <h5>Oxygen Generators</h5>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Check it out our new <br />
+          product line -->

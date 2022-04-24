@@ -1,0 +1,10 @@
+<div class="main" *ngIf="!showThanks">
+  <app-header></app-header>
+  <div style="position: relative;top: 14.5vh;">
+  <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+<div class="main" *ngIf="showThanks">
+  <router-outlet></router-outlet>
+</div>

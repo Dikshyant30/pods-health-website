@@ -1,0 +1,27 @@
+<div class="main container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>{{ blogDetails.blogTitle }}</h3>
+      <p>{{ blogDetails.blogHeader }}</p>
+      <img
+        [src]="_imgPath.getFilePath(blogDetails.image2Link)"
+        style="width: 100%"
+        alt=""
+      />
+      <div #dataContainer class="blog-text"></div>
+
+      <img
+        [src]="_imgPath.getFilePath(blogDetails.image1Link)"
+        style="width: 100%"
+        alt=""
+      />
+      <div>
+        <p>
+          {{ blogDetails.blogFooter }}
+        </p>
+      </div>
+      <p>Take care,</p>
+      <p>PODS Health Team</p>
+    </div>
+  </div>
+</div>
